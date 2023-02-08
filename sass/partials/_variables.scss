@@ -1,0 +1,25 @@
+ 
+ // color variables
+
+ $prim-c:#fafafa;
+ $sec-c:#220000;
+
+ //social colors
+ $fb-c:#39579b;
+ $insta-c:#cc0068;
+ $twit-c:#1da1f2;
+ $yt-c:#f80000;
+ $ln-c:rgb(21, 21, 110);
+
+ //shadow
+$shadow : 0 5px 15px rgba($sec-c, 0.5);
+
+//bg image
+$bg-img: url(/sass/img/background-img.jpg);
+
+$tablet-L: 1024px;
+$tablet: 820px;
+$phone: 375px;
+
+
+

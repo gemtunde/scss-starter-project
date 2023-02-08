@@ -11,4 +11,38 @@ body {
 a, li {
   list-style: none;
   text-decoration: none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+nav ul {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+nav ul li {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+}
+nav ul li a {
+  color: #fafafa;
+  transition: all 0.5s ease;
+}
+nav ul li a:hover {
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 0 5px 15px rgba(34, 0, 0, 0.5);
+  border: 1px solid rgba(34, 0, 0, 0.25);
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+.menu-nav-right {
+  color: #220000;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
