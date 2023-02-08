@@ -1,0 +1,51 @@
+footer {
+    position: fixed;
+    bottom: 1rem;
+    width: 100%;
+    @include Flex(row, center);
+    justify-content: space-between;
+    text-align: center;
+    .copy {
+            font-size: 0.9rem;
+            padding-left: 1rem;
+            color: $sec-c;
+        }
+a {
+        color: $sec-c;
+}
+.social {
+    padding-right: 1rem;
+
+    a {
+        padding: 0 0.2rem;
+        @include transition;
+
+        &:hover {
+            @include hover
+        }
+
+        &:first-child:hover {
+            color: $fb-c;
+        }
+
+        &:nth-child(2):hover {
+            color: $insta-c;
+        }
+
+        &:nth-child(3):hover {
+            color: $twit-c;
+        }
+
+        &:nth-child(4):hover {
+            color: $yt-c;
+        }
+
+        &:last-child:hover {
+            color: $ln-c;
+        }
+    }
+}
+
+}
+
+

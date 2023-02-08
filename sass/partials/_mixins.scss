@@ -47,3 +47,10 @@
         background-attachment: fixed;
         -webkit-background-clip: text;
 }
+
+//footer
+@mixin Flex($dir:row, $align:center){
+    display: flex;
+    flex-direction: $dir;
+    align-items:$align;
+}

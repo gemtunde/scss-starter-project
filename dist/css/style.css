@@ -138,4 +138,49 @@ h1 {
   color: transparent;
   animation: right 2s ease forwards;
   animation-delay: 0.3s;
+}
+
+footer {
+  position: fixed;
+  bottom: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+footer .copy {
+  font-size: 0.9rem;
+  padding-left: 1rem;
+  color: #220000;
+}
+footer a {
+  color: #220000;
+}
+footer .social {
+  padding-right: 1rem;
+}
+footer .social a {
+  padding: 0 0.2rem;
+  transition: all 0.5s ease;
+}
+footer .social a:hover {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+footer .social a:first-child:hover {
+  color: #39579b;
+}
+footer .social a:nth-child(2):hover {
+  color: #cc0068;
+}
+footer .social a:nth-child(3):hover {
+  color: #1da1f2;
+}
+footer .social a:nth-child(4):hover {
+  color: #f80000;
+}
+footer .social a:last-child:hover {
+  color: rgb(21, 21, 110);
 }/*# sourceMappingURL=style.css.map */
