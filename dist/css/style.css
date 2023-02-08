@@ -45,4 +45,97 @@ nav ul li a:hover {
 .menu-nav-right {
   color: #220000;
   font-weight: 600;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  background-image: url(/sass/img/background-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: 1.4s ease forwards;
+  animation-delay: 0.3s;
+}
+@keyframes right {
+  0% {
+    opacity: 0;
+    top: 60%;
+  }
+  100% {
+    opacity: 1;
+    top: 50%;
+  }
+}
+
+.left {
+  width: 50%;
+  position: relative;
+  background-image: url(/sass/img/background-img.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 120px;
+}
+.left h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fafafa;
+  text-shadow: 0 5px 15px rgba(34, 0, 0, 0.5);
+  box-shadow: 0px 5px 10px #220000;
+  padding: 24px 6px;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  animation: left 2s ease forwards;
+  animation-delay: 0.4s;
+  transition: all 0.5s ease;
+}
+.left h1:hover {
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: inset -10px 5px 100px #220000;
+}
+
+@keyframes left {
+  0% {
+    opacity: 0;
+    top: 60%;
+  }
+  100% {
+    opacity: 1;
+    top: 50%;
+  }
+}
+.right {
+  width: 50%;
+  position: relative;
+}
+.right h1 {
+  position: absolute;
+  transform: translate(-50%);
+  top: 20vh;
+  font-size: 6rem;
+  background-image: url(/sass/img/background-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: text;
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: right 2s ease forwards;
+  animation-delay: 0.3s;
 }/*# sourceMappingURL=style.css.map */
