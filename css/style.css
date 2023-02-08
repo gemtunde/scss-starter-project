@@ -8,6 +8,11 @@
 :root{
     --prim-c:#fafafa;
     --sec-c:#220000;
+    --fb-c:#39579b;
+    --insta-c:#cc0068;
+    --twit-c:#1da1f2;
+    --yt-c:#f80000;
+    --ln-c:rgb(21, 21, 110);
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -136,3 +141,52 @@ body{
         animation-delay: 0.3s;
     
 }
+footer{
+    position: fixed;
+    bottom: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+}
+footer a{
+    color: var(--sec-c);
+}
+.copy{
+    font-size:0.9rem;
+    padding-left: 1rem;
+    color: var(--sec-c);
+}
+.social{
+    padding-right: 1rem;
+}
+.social a{
+    padding: 0 0.2rem;
+    transition: 0.9s ease;
+}
+.social a:hover{
+    cursor: pointer;
+    transition: 0.9s ease;
+}
+.social a:first-child:hover{
+    color:var(--fb-c)
+}
+.social a:nth-child(2):hover{
+    color: var(--insta-c);
+}
+.social a:nth-child(3):hover{
+    color: var(--twit-c);
+}
+.social a:nth-child(4):hover{
+    color: var(--yt-c);
+}
+.social a:last-child:hover{
+    color:var(--ln-c);
+}
+
+
+
+
+
